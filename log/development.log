@@ -103,3 +103,784 @@ Started GET "/ola" for 127.0.0.1 at 2014-09-01 11:08:07 -0300
 Processing by OlaMundoController#index as HTML
   Rendered text template (0.0ms)
 Completed 200 OK in 114ms (Views: 112.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-01 11:18:27 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /home/alessandrostein/.rvm/gems/ruby-2.1.2/gems/railties-4.1.4/lib/rails/templates/rails/welcome/index.html.erb (1.3ms)
+Completed 200 OK in 13ms (Views: 5.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurantes" for 127.0.0.1 at 2014-09-01 11:18:37 -0300
+Processing by RestaurantesController#index as HTML
+  Rendered restaurantes/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 1535ms (Views: 1534.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/ola_mundo.css?body=1" for 127.0.0.1 at 2014-09-01 11:18:38 -0300
+
+
+Started GET "/assets/restaurantes.css?body=1" for 127.0.0.1 at 2014-09-01 11:18:39 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-01 11:18:39 -0300
+
+
+Started GET "/assets/ola_mundo.js?body=1" for 127.0.0.1 at 2014-09-01 11:18:39 -0300
+
+
+Started GET "/assets/restaurantes.js?body=1" for 127.0.0.1 at 2014-09-01 11:18:39 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-01 11:18:39 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-01 11:18:39 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-01 11:18:39 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-01 11:18:39 -0300
+
+
+Started GET "/restaurantes" for 127.0.0.1 at 2014-09-01 11:26:37 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by RestaurantesController#index as HTML
+Completed 500 Internal Server Error in 9ms
+
+NameError (uninitialized constant RestaurantesController::Restaurantes):
+  app/controllers/restaurantes_controller.rb:4:in `index'
+
+
+  Rendered /home/alessandrostein/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /home/alessandrostein/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /home/alessandrostein/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /home/alessandrostein/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (21.6ms)
+
+
+Started GET "/restaurantes" for 127.0.0.1 at 2014-09-01 11:27:23 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by RestaurantesController#index as HTML
+Completed 500 Internal Server Error in 9ms
+
+SyntaxError (/home/alessandrostein/gitrepo/voto-prato/app/models/restaurante.rb:3: syntax error, unexpected ':', expecting keyword_end
+	has_many: qualificacoes
+	         ^):
+  app/models/restaurante.rb:3: syntax error, unexpected ':', expecting keyword_end
+  app/controllers/restaurantes_controller.rb:4:in `index'
+
+
+  Rendered /home/alessandrostein/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /home/alessandrostein/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /home/alessandrostein/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/alessandrostein/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (11.8ms)
+
+
+Started GET "/restaurantes" for 127.0.0.1 at 2014-09-01 11:27:24 -0300
+Processing by RestaurantesController#index as HTML
+Completed 500 Internal Server Error in 2ms
+
+SyntaxError (/home/alessandrostein/gitrepo/voto-prato/app/models/restaurante.rb:3: syntax error, unexpected ':', expecting keyword_end
+	has_many: qualificacoes
+	         ^):
+  app/models/restaurante.rb:3: syntax error, unexpected ':', expecting keyword_end
+  app/controllers/restaurantes_controller.rb:4:in `index'
+
+
+  Rendered /home/alessandrostein/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /home/alessandrostein/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /home/alessandrostein/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/alessandrostein/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.1ms)
+
+
+Started GET "/restaurantes" for 127.0.0.1 at 2014-09-01 11:27:24 -0300
+Processing by RestaurantesController#index as HTML
+Completed 500 Internal Server Error in 2ms
+
+SyntaxError (/home/alessandrostein/gitrepo/voto-prato/app/models/restaurante.rb:3: syntax error, unexpected ':', expecting keyword_end
+	has_many: qualificacoes
+	         ^):
+  app/models/restaurante.rb:3: syntax error, unexpected ':', expecting keyword_end
+  app/controllers/restaurantes_controller.rb:4:in `index'
+
+
+  Rendered /home/alessandrostein/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /home/alessandrostein/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /home/alessandrostein/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/alessandrostein/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.3ms)
+
+
+Started GET "/restaurantes" for 127.0.0.1 at 2014-09-01 11:27:24 -0300
+Processing by RestaurantesController#index as HTML
+Completed 500 Internal Server Error in 1ms
+
+SyntaxError (/home/alessandrostein/gitrepo/voto-prato/app/models/restaurante.rb:3: syntax error, unexpected ':', expecting keyword_end
+	has_many: qualificacoes
+	         ^):
+  app/models/restaurante.rb:3: syntax error, unexpected ':', expecting keyword_end
+  app/controllers/restaurantes_controller.rb:4:in `index'
+
+
+  Rendered /home/alessandrostein/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /home/alessandrostein/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /home/alessandrostein/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/alessandrostein/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.1ms)
+
+
+Started GET "/restaurantes" for 127.0.0.1 at 2014-09-01 11:27:51 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by RestaurantesController#index as HTML
+  [1m[35mRestaurante Load (0.9ms)[0m  SELECT `restaurantes`.* FROM `restaurantes`   ORDER BY `restaurantes`.`nome` ASC
+  Rendered restaurantes/index.html.erb within layouts/application (11.4ms)
+Completed 200 OK in 144ms (Views: 40.3ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-01 11:27:51 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-01 11:27:51 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-01 11:27:51 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-01 11:27:51 -0300
+
+
+Started GET "/assets/ola_mundo.css?body=1" for 127.0.0.1 at 2014-09-01 11:27:51 -0300
+
+
+Started GET "/assets/restaurantes.css?body=1" for 127.0.0.1 at 2014-09-01 11:27:51 -0300
+
+
+Started GET "/assets/ola_mundo.js?body=1" for 127.0.0.1 at 2014-09-01 11:27:51 -0300
+
+
+Started GET "/assets/restaurantes.js?body=1" for 127.0.0.1 at 2014-09-01 11:27:51 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-01 11:27:51 -0300
+
+
+Started GET "/restaurantes" for 127.0.0.1 at 2014-09-01 11:30:14 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by RestaurantesController#index as HTML
+  [1m[35mRestaurante Load (0.7ms)[0m  SELECT `restaurantes`.* FROM `restaurantes`   ORDER BY `restaurantes`.`nome` ASC
+  Rendered restaurantes/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 56ms (Views: 37.1ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-01 11:30:14 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-01 11:30:14 -0300
+
+
+Started GET "/assets/restaurantes.css?body=1" for 127.0.0.1 at 2014-09-01 11:30:14 -0300
+
+
+Started GET "/assets/ola_mundo.css?body=1" for 127.0.0.1 at 2014-09-01 11:30:14 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-01 11:30:14 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-01 11:30:14 -0300
+
+
+Started GET "/assets/ola_mundo.js?body=1" for 127.0.0.1 at 2014-09-01 11:30:14 -0300
+
+
+Started GET "/assets/restaurantes.js?body=1" for 127.0.0.1 at 2014-09-01 11:30:14 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-01 11:30:14 -0300
+
+
+Started GET "/restaurantes/1" for 127.0.0.1 at 2014-09-01 11:31:54 -0300
+
+AbstractController::ActionNotFound (The action 'show' could not be found for RestaurantesController):
+  actionpack (4.1.4) lib/abstract_controller/base.rb:131:in `process'
+  actionview (4.1.4) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.4) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.4) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.4) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.4) lib/action_dispatch/routing/route_set.rb:82:in `call'
+  actionpack (4.1.4) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.4) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.4) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.4) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.4) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.4) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.4) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.4) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.4) lib/rails/engine.rb:514:in `call'
+  railties (4.1.4) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/alessandrostein/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/alessandrostein/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/alessandrostein/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/alessandrostein/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (0.4ms)
+
+
+Started GET "/restaurantes/1" for 127.0.0.1 at 2014-09-01 11:32:37 -0300
+Processing by RestaurantesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRestaurante Load (0.5ms)[0m  [1mSELECT  `restaurantes`.* FROM `restaurantes`  WHERE `restaurantes`.`id` = 1 LIMIT 1[0m
+Completed 404 Not Found in 10ms
+
+ActiveRecord::RecordNotFound (Couldn't find Restaurante with 'id'=1):
+  app/controllers/restaurantes_controller.rb:8:in `show'
+
+
+  Rendered /home/alessandrostein/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /home/alessandrostein/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /home/alessandrostein/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/alessandrostein/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (11.2ms)
+
+
+Started GET "/restaurantes/1" for 127.0.0.1 at 2014-09-01 11:33:32 -0300
+Processing by RestaurantesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mRestaurante Load (0.3ms)[0m  SELECT  `restaurantes`.* FROM `restaurantes`  WHERE `restaurantes`.`id` = 1 LIMIT 1
+Completed 404 Not Found in 2ms
+
+ActiveRecord::RecordNotFound (Couldn't find Restaurante with 'id'=1):
+  app/controllers/restaurantes_controller.rb:8:in `show'
+
+
+  Rendered /home/alessandrostein/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /home/alessandrostein/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /home/alessandrostein/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/alessandrostein/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.5ms)
+
+
+Started GET "/restaurantes/2" for 127.0.0.1 at 2014-09-01 11:33:39 -0300
+Processing by RestaurantesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRestaurante Load (0.7ms)[0m  [1mSELECT  `restaurantes`.* FROM `restaurantes`  WHERE `restaurantes`.`id` = 2 LIMIT 1[0m
+  Rendered restaurantes/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 11ms (Views: 5.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/ola_mundo.css?body=1" for 127.0.0.1 at 2014-09-01 11:33:39 -0300
+
+
+Started GET "/assets/restaurantes.css?body=1" for 127.0.0.1 at 2014-09-01 11:33:39 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-01 11:33:39 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-01 11:33:39 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-01 11:33:39 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-01 11:33:39 -0300
+
+
+Started GET "/assets/ola_mundo.js?body=1" for 127.0.0.1 at 2014-09-01 11:33:39 -0300
+
+
+Started GET "/assets/restaurantes.js?body=1" for 127.0.0.1 at 2014-09-01 11:33:39 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-01 11:33:39 -0300
+
+
+Started GET "/restaurantes/2" for 127.0.0.1 at 2014-09-01 11:35:08 -0300
+Processing by RestaurantesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mRestaurante Load (0.3ms)[0m  SELECT  `restaurantes`.* FROM `restaurantes`  WHERE `restaurantes`.`id` = 2 LIMIT 1
+  Rendered restaurantes/show.html.erb within layouts/application (1.7ms)
+Completed 500 Internal Server Error in 5ms
+
+ActionView::Template::Error (undefined method `nome' for nil:NilClass):
+    1: <h1> Exibindo Restaurante </h1>
+    2: 
+    3: Nome: <%= @restaurante.nome %>
+    4: Endereco: <%= @restaurante.endereco %>
+    5: Especialidade: <%= @restaurante.especialidade %>
+  app/views/restaurantes/show.html.erb:3:in `_app_views_restaurantes_show_html_erb__1830229342584818144_44541500'
+
+
+  Rendered /home/alessandrostein/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /home/alessandrostein/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/alessandrostein/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (13.9ms)
+
+
+Started GET "/restaurantes/2" for 127.0.0.1 at 2014-09-01 11:35:57 -0300
+Processing by RestaurantesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRestaurante Load (0.3ms)[0m  [1mSELECT  `restaurantes`.* FROM `restaurantes`  WHERE `restaurantes`.`id` = 2 LIMIT 1[0m
+  Rendered restaurantes/show.html.erb within layouts/application (11.4ms)
+Completed 500 Internal Server Error in 17ms
+
+ActionView::Template::Error (undefined local variable or method `restaurante' for #<#<Class:0x00000005885158>:0x000000052018e0>):
+    1: <h1> Exibindo Restaurante </h1>
+    2: 
+    3: Nome: <%= restaurante.nome %>
+    4: Endereco: <%= restaurante.endereco %>
+    5: Especialidade: <%= restaurante.especialidade %>
+  app/views/restaurantes/show.html.erb:3:in `_app_views_restaurantes_show_html_erb__1830229342584818144_42992300'
+
+
+  Rendered /home/alessandrostein/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /home/alessandrostein/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/alessandrostein/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (8.8ms)
+
+
+Started GET "/restaurantes/2" for 127.0.0.1 at 2014-09-01 11:36:29 -0300
+Processing by RestaurantesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mRestaurante Load (0.3ms)[0m  SELECT  `restaurantes`.* FROM `restaurantes`  WHERE `restaurantes`.`id` = 2 LIMIT 1
+  Rendered restaurantes/show.html.erb within layouts/application (1.3ms)
+Completed 500 Internal Server Error in 4ms
+
+ActionView::Template::Error (undefined method `nome' for nil:NilClass):
+    1: <h1> Exibindo Restaurante </h1>
+    2: 
+    3: Nome: <%= @restaurante.nome %>
+    4: Endereço: <%= @restaurante.endereco %>
+    5: Especialidade: <%= @restaurante.especialidade %>
+  app/views/restaurantes/show.html.erb:3:in `_app_views_restaurantes_show_html_erb__1830229342584818144_41866980'
+
+
+  Rendered /home/alessandrostein/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /home/alessandrostein/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/alessandrostein/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (9.8ms)
+
+
+Started GET "/restaurantes/2" for 127.0.0.1 at 2014-09-01 11:36:58 -0300
+Processing by RestaurantesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRestaurante Load (0.3ms)[0m  [1mSELECT  `restaurantes`.* FROM `restaurantes`  WHERE `restaurantes`.`id` = 2 LIMIT 1[0m
+  Rendered restaurantes/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 10ms (Views: 7.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/ola_mundo.css?body=1" for 127.0.0.1 at 2014-09-01 11:36:58 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-01 11:36:58 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-01 11:36:58 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-01 11:36:58 -0300
+
+
+Started GET "/assets/restaurantes.css?body=1" for 127.0.0.1 at 2014-09-01 11:36:58 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-01 11:36:58 -0300
+
+
+Started GET "/assets/ola_mundo.js?body=1" for 127.0.0.1 at 2014-09-01 11:36:58 -0300
+
+
+Started GET "/assets/restaurantes.js?body=1" for 127.0.0.1 at 2014-09-01 11:36:58 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-01 11:36:58 -0300
+
+
+Started GET "/restaurantes/2" for 127.0.0.1 at 2014-09-01 11:37:45 -0300
+Processing by RestaurantesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mRestaurante Load (0.3ms)[0m  SELECT  `restaurantes`.* FROM `restaurantes`  WHERE `restaurantes`.`id` = 2 LIMIT 1
+  Rendered restaurantes/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 24ms (Views: 5.6ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/assets/ola_mundo.css?body=1" for 127.0.0.1 at 2014-09-01 11:37:45 -0300
+
+
+Started GET "/assets/restaurantes.css?body=1" for 127.0.0.1 at 2014-09-01 11:37:45 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-01 11:37:45 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-01 11:37:45 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-01 11:37:45 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-01 11:37:45 -0300
+
+
+Started GET "/assets/ola_mundo.js?body=1" for 127.0.0.1 at 2014-09-01 11:37:45 -0300
+
+
+Started GET "/assets/restaurantes.js?body=1" for 127.0.0.1 at 2014-09-01 11:37:45 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-01 11:37:45 -0300
+
+
+Started GET "/restaurantes/2" for 127.0.0.1 at 2014-09-01 11:38:32 -0300
+Processing by RestaurantesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRestaurante Load (0.3ms)[0m  [1mSELECT  `restaurantes`.* FROM `restaurantes`  WHERE `restaurantes`.`id` = 2 LIMIT 1[0m
+  Rendered restaurantes/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 10ms (Views: 8.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/ola_mundo.css?body=1" for 127.0.0.1 at 2014-09-01 11:38:32 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-01 11:38:32 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-01 11:38:32 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-01 11:38:32 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-01 11:38:32 -0300
+
+
+Started GET "/assets/restaurantes.css?body=1" for 127.0.0.1 at 2014-09-01 11:38:32 -0300
+
+
+Started GET "/assets/ola_mundo.js?body=1" for 127.0.0.1 at 2014-09-01 11:38:32 -0300
+
+
+Started GET "/assets/restaurantes.js?body=1" for 127.0.0.1 at 2014-09-01 11:38:32 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-01 11:38:32 -0300
+
+
+Started GET "/restaurantes/" for 127.0.0.1 at 2014-09-01 11:40:37 -0300
+Processing by RestaurantesController#index as HTML
+  [1m[35mRestaurante Load (0.5ms)[0m  SELECT `restaurantes`.* FROM `restaurantes`   ORDER BY `restaurantes`.`nome` ASC
+  Rendered restaurantes/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 11ms (Views: 9.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/ola_mundo.css?body=1" for 127.0.0.1 at 2014-09-01 11:40:37 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-01 11:40:37 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-01 11:40:37 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-01 11:40:37 -0300
+
+
+Started GET "/assets/restaurantes.css?body=1" for 127.0.0.1 at 2014-09-01 11:40:37 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-01 11:40:37 -0300
+
+
+Started GET "/assets/restaurantes.js?body=1" for 127.0.0.1 at 2014-09-01 11:40:37 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-01 11:40:37 -0300
+
+
+Started GET "/assets/ola_mundo.js?body=1" for 127.0.0.1 at 2014-09-01 11:40:37 -0300
+
+
+Started GET "/restaurantes/2" for 127.0.0.1 at 2014-09-01 11:40:39 -0300
+Processing by RestaurantesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRestaurante Load (0.4ms)[0m  [1mSELECT  `restaurantes`.* FROM `restaurantes`  WHERE `restaurantes`.`id` = 2 LIMIT 1[0m
+  Rendered restaurantes/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 11ms (Views: 8.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/restaurantes/3" for 127.0.0.1 at 2014-09-01 11:40:41 -0300
+Processing by RestaurantesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mRestaurante Load (0.4ms)[0m  SELECT  `restaurantes`.* FROM `restaurantes`  WHERE `restaurantes`.`id` = 3 LIMIT 1
+  Rendered restaurantes/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 7ms (Views: 5.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/restaurantes/5" for 127.0.0.1 at 2014-09-01 11:40:43 -0300
+Processing by RestaurantesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mRestaurante Load (0.7ms)[0m  [1mSELECT  `restaurantes`.* FROM `restaurantes`  WHERE `restaurantes`.`id` = 5 LIMIT 1[0m
+  Rendered restaurantes/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 8ms (Views: 5.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/restaurantes/" for 127.0.0.1 at 2014-09-01 11:44:19 -0300
+Processing by RestaurantesController#index as HTML
+  [1m[35mRestaurante Load (0.4ms)[0m  SELECT `restaurantes`.* FROM `restaurantes`   ORDER BY `restaurantes`.`nome` ASC
+  Rendered restaurantes/index.html.erb within layouts/application (11.3ms)
+Completed 200 OK in 29ms (Views: 13.7ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/assets/ola_mundo.css?body=1" for 127.0.0.1 at 2014-09-01 11:44:19 -0300
+
+
+Started GET "/assets/restaurantes.css?body=1" for 127.0.0.1 at 2014-09-01 11:44:19 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-01 11:44:19 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-01 11:44:19 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-01 11:44:19 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-01 11:44:19 -0300
+
+
+Started GET "/assets/ola_mundo.js?body=1" for 127.0.0.1 at 2014-09-01 11:44:19 -0300
+
+
+Started GET "/assets/restaurantes.js?body=1" for 127.0.0.1 at 2014-09-01 11:44:19 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-01 11:44:19 -0300
+
+
+Started GET "/restaurantes/destroy/2" for 127.0.0.1 at 2014-09-01 11:44:28 -0300
+
+ActionController::RoutingError (No route matches [GET] "/restaurantes/destroy/2"):
+  actionpack (4.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.4) lib/rails/engine.rb:514:in `call'
+  railties (4.1.4) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/alessandrostein/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/alessandrostein/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/alessandrostein/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/alessandrostein/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /home/alessandrostein/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.2ms)
+  Rendered /home/alessandrostein/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (207.5ms)
+  Rendered /home/alessandrostein/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (311.2ms)
+
+
+Started GET "/restaurantes/" for 127.0.0.1 at 2014-09-01 11:47:27 -0300
+Processing by RestaurantesController#index as HTML
+  [1m[36mRestaurante Load (1.2ms)[0m  [1mSELECT `restaurantes`.* FROM `restaurantes`   ORDER BY `restaurantes`.`nome` ASC[0m
+  Rendered restaurantes/index.html.erb within layouts/application (14.2ms)
+Completed 200 OK in 25ms (Views: 16.2ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/assets/restaurantes.css?body=1" for 127.0.0.1 at 2014-09-01 11:47:27 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-01 11:47:27 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-01 11:47:27 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-01 11:47:27 -0300
+
+
+Started GET "/assets/ola_mundo.css?body=1" for 127.0.0.1 at 2014-09-01 11:47:27 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-01 11:47:27 -0300
+
+
+Started GET "/assets/ola_mundo.js?body=1" for 127.0.0.1 at 2014-09-01 11:47:27 -0300
+
+
+Started GET "/assets/restaurantes.js?body=1" for 127.0.0.1 at 2014-09-01 11:47:27 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-01 11:47:27 -0300
+
+
+Started DELETE "/restaurantes/2" for 127.0.0.1 at 2014-09-01 11:47:29 -0300
+Processing by RestaurantesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"iodyF6VX5UHQD0aX+v+4wrhLXIzK4JT+kho8/Q7iN9I=", "id"=>"2"}
+  [1m[35mRestaurante Load (0.6ms)[0m  SELECT  `restaurantes`.* FROM `restaurantes`  WHERE `restaurantes`.`id` = 2 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM `pratos_restaurantes` WHERE `pratos_restaurantes`.`restaurante_id` = 2
+Mysql2::Error: Unknown column 'pratos_restaurantes.restaurante_id' in 'where clause': DELETE FROM `pratos_restaurantes` WHERE `pratos_restaurantes`.`restaurante_id` = 2
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+Completed 500 Internal Server Error in 37ms
+
+ActiveRecord::StatementInvalid (Mysql2::Error: Unknown column 'pratos_restaurantes.restaurante_id' in 'where clause': DELETE FROM `pratos_restaurantes` WHERE `pratos_restaurantes`.`restaurante_id` = 2):
+  app/controllers/restaurantes_controller.rb:13:in `destroy'
+
+
+  Rendered /home/alessandrostein/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.1ms)
+  Rendered /home/alessandrostein/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /home/alessandrostein/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/alessandrostein/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.8ms)
+
+
+Started GET "/restaurantes/" for 127.0.0.1 at 2014-09-01 11:48:32 -0300
+Processing by RestaurantesController#index as HTML
+  [1m[35mRestaurante Load (0.7ms)[0m  SELECT `restaurantes`.* FROM `restaurantes`   ORDER BY `restaurantes`.`nome` ASC
+  Rendered restaurantes/index.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 20ms (Views: 11.7ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/assets/ola_mundo.css?body=1" for 127.0.0.1 at 2014-09-01 11:48:32 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-01 11:48:32 -0300
+
+
+Started GET "/assets/restaurantes.css?body=1" for 127.0.0.1 at 2014-09-01 11:48:32 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-01 11:48:32 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-01 11:48:32 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-01 11:48:32 -0300
+
+
+Started GET "/assets/ola_mundo.js?body=1" for 127.0.0.1 at 2014-09-01 11:48:32 -0300
+
+
+Started GET "/assets/restaurantes.js?body=1" for 127.0.0.1 at 2014-09-01 11:48:32 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-01 11:48:32 -0300
+
+
+Started DELETE "/restaurantes/4" for 127.0.0.1 at 2014-09-01 11:48:34 -0300
+Processing by RestaurantesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"iodyF6VX5UHQD0aX+v+4wrhLXIzK4JT+kho8/Q7iN9I=", "id"=>"4"}
+  [1m[36mRestaurante Load (0.5ms)[0m  [1mSELECT  `restaurantes`.* FROM `restaurantes`  WHERE `restaurantes`.`id` = 4 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM `pratos_restaurantes` WHERE `pratos_restaurantes`.`restaurante_id` = 4[0m
+Mysql2::Error: Unknown column 'pratos_restaurantes.restaurante_id' in 'where clause': DELETE FROM `pratos_restaurantes` WHERE `pratos_restaurantes`.`restaurante_id` = 4
+  [1m[35m (0.1ms)[0m  ROLLBACK
+Completed 500 Internal Server Error in 12ms
+
+ActiveRecord::StatementInvalid (Mysql2::Error: Unknown column 'pratos_restaurantes.restaurante_id' in 'where clause': DELETE FROM `pratos_restaurantes` WHERE `pratos_restaurantes`.`restaurante_id` = 4):
+  app/controllers/restaurantes_controller.rb:13:in `destroy'
+
+
+  Rendered /home/alessandrostein/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /home/alessandrostein/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /home/alessandrostein/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/alessandrostein/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (17.8ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.5ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.4ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+
+
+Started GET "/restaurantes/" for 127.0.0.1 at 2014-09-01 11:54:32 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by RestaurantesController#index as HTML
+  [1m[35mRestaurante Load (0.7ms)[0m  SELECT `restaurantes`.* FROM `restaurantes`   ORDER BY `restaurantes`.`nome` ASC
+  Rendered restaurantes/index.html.erb within layouts/application (10.6ms)
+Completed 200 OK in 60ms (Views: 38.9ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-01 11:54:32 -0300
+
+
+Started GET "/assets/restaurantes.css?body=1" for 127.0.0.1 at 2014-09-01 11:54:32 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-01 11:54:32 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-01 11:54:32 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-01 11:54:32 -0300
+
+
+Started GET "/assets/ola_mundo.css?body=1" for 127.0.0.1 at 2014-09-01 11:54:32 -0300
+
+
+Started GET "/assets/ola_mundo.js?body=1" for 127.0.0.1 at 2014-09-01 11:54:32 -0300
+
+
+Started GET "/assets/restaurantes.js?body=1" for 127.0.0.1 at 2014-09-01 11:54:32 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-01 11:54:32 -0300
+
+
+Started DELETE "/restaurantes/4" for 127.0.0.1 at 2014-09-01 11:54:34 -0300
+Processing by RestaurantesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"iodyF6VX5UHQD0aX+v+4wrhLXIzK4JT+kho8/Q7iN9I=", "id"=>"4"}
+  [1m[36mRestaurante Load (0.6ms)[0m  [1mSELECT  `restaurantes`.* FROM `restaurantes`  WHERE `restaurantes`.`id` = 4 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mDELETE FROM `pratos_restaurantes` WHERE `pratos_restaurantes`.`restaurante_id` = 4[0m
+Mysql2::Error: Unknown column 'pratos_restaurantes.restaurante_id' in 'where clause': DELETE FROM `pratos_restaurantes` WHERE `pratos_restaurantes`.`restaurante_id` = 4
+  [1m[35m (0.2ms)[0m  ROLLBACK
+Completed 500 Internal Server Error in 21ms
+
+ActiveRecord::StatementInvalid (Mysql2::Error: Unknown column 'pratos_restaurantes.restaurante_id' in 'where clause': DELETE FROM `pratos_restaurantes` WHERE `pratos_restaurantes`.`restaurante_id` = 4):
+  app/controllers/restaurantes_controller.rb:13:in `destroy'
+
+
+  Rendered /home/alessandrostein/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /home/alessandrostein/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /home/alessandrostein/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/alessandrostein/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (10.7ms)
