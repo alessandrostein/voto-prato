@@ -1,0 +1,70 @@
+  [1m[36m (95.3ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (231.7ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations`  ON `schema_migrations` (`version`) 
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateRestaurantes (20140901115057)
+  [1m[35m (128.0ms)[0m  CREATE TABLE `restaurantes` (`id` int(11) auto_increment PRIMARY KEY, `nome` varchar(80), `endereco` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20140901115057')
+  [1m[36m (67.3ms)[0m  [1mCOMMIT[0m
+Migrating to AddColumnEspecialidadeToRestaurante (20140901115908)
+  [1m[35m (276.4ms)[0m  ALTER TABLE `restaurantes` ADD `especialidade` varchar(40)
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20140901115908')
+  [1m[36m (40.6ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.4ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (221.7ms)[0m  INSERT INTO `restaurantes` (`created_at`, `endereco`, `especialidade`, `nome`, `updated_at`) VALUES ('2014-09-01 12:20:25', 'Av. dos Restaurantes, 126', 'Comida Italiana', 'Fasano', '2014-09-01 12:20:25')
+  [1m[36m (43.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mSQL (0.8ms)[0m  [1mUPDATE `restaurantes` SET `nome` = '1900', `updated_at` = '2014-09-01 12:21:34' WHERE `restaurantes`.`id` = 1[0m
+  [1m[35m (38.3ms)[0m  COMMIT
+  [1m[36mRestaurante Load (0.7ms)[0m  [1mSELECT  `restaurantes`.* FROM `restaurantes`  WHERE `restaurantes`.`id` = 1 LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mDELETE FROM `restaurantes` WHERE `restaurantes`.`id` = 1[0m
+  [1m[35m (56.5ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO `restaurantes` (`created_at`, `endereco`, `especialidade`, `nome`, `updated_at`) VALUES ('2014-09-01 12:23:55', 'Av. dos Restaurantes, 126', 'Comida Italiana', 'Fasano', '2014-09-01 12:23:55')
+  [1m[36m (116.9ms)[0m  [1mCOMMIT[0m
+  [1m[35mRestaurante Load (0.7ms)[0m  SELECT `restaurantes`.* FROM `restaurantes`
+  [1m[36mRestaurante Load (0.8ms)[0m  [1mSELECT `restaurantes`.* FROM `restaurantes`  WHERE (nome = 'Fasano' and especialidade = 'Comida Italiana')[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `restaurantes` (`created_at`, `endereco`, `especialidade`, `nome`, `updated_at`) VALUES ('2014-09-01 12:41:53', 'Av. dos Restaurantes, 126', 'Comida Italiana', 'Fasano', '2014-09-01 12:41:53')[0m
+  [1m[35m (63.9ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `restaurantes` (`created_at`, `endereco`, `especialidade`, `nome`, `updated_at`) VALUES ('2014-09-01 12:42:49', 'Av. dos Restaurantes, 126', 'Comida Italiana', 'fasano', '2014-09-01 12:42:49')
+  [1m[36m (109.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO `restaurantes` (`created_at`, `endereco`, `especialidade`, `nome`, `updated_at`) VALUES ('2014-09-01 12:43:39', 'Av. dos Restaurantes, 126', 'Comida Italiana', 'fasano', '2014-09-01 12:43:39')[0m
+  [1m[35m (109.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mRestaurante Exists (0.4ms)[0m  SELECT  1 AS one FROM `restaurantes`  WHERE `restaurantes`.`nome` = BINARY 'fasano' LIMIT 1
+  [1m[36mRestaurante Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM `restaurantes`  WHERE `restaurantes`.`endereco` = BINARY 'Av. dos Restaurantes, 126' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateClientes (20140901125944)
+  [1m[35m (162.7ms)[0m  CREATE TABLE `clientes` (`id` int(11) auto_increment PRIMARY KEY, `nome` varchar(80), `idade` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20140901125944')
+  [1m[36m (38.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.5ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreatePratos (20140901130705)
+  [1m[35m (151.2ms)[0m  CREATE TABLE `pratos` (`id` int(11) auto_increment PRIMARY KEY, `nome` varchar(80), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20140901130705')
+  [1m[36m (45.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.5ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateReceitas (20140901130930)
+  [1m[35m (148.7ms)[0m  CREATE TABLE `receitas` (`id` int(11) auto_increment PRIMARY KEY, `conteudo` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20140901130930')
+  [1m[36m (40.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.5ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateQualificacoes (20140901131247)
+  [1m[35m (157.8ms)[0m  CREATE TABLE `qualificacoes` (`id` int(11) auto_increment PRIMARY KEY, `nota` float, `valor_gasto` float, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20140901131247')
+  [1m[36m (51.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.4ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
