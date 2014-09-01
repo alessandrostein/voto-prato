@@ -68,3 +68,25 @@ Migrating to CreateQualificacoes (20140901131247)
   [1m[35mSQL (0.6ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20140901131247')
   [1m[36m (51.3ms)[0m  [1mCOMMIT[0m
   [1m[35mActiveRecord::SchemaMigration Load (0.4ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to AddColumnPratoIdToReceitas (20140901133146)
+  [1m[35m (349.6ms)[0m  ALTER TABLE `receitas` ADD `prato_id` int(11)
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20140901133146')
+  [1m[36m (56.5ms)[0m  [1mCOMMIT[0m
+Migrating to AddClienteIdAndRestauranteIdToQualificacoes (20140901133256)
+  [1m[35m (231.9ms)[0m  ALTER TABLE `qualificacoes` ADD `cliente_id` int(11)
+  [1m[36m (243.6ms)[0m  [1mALTER TABLE `qualificacoes` ADD `restaurante_id` int(11)[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20140901133256')[0m
+  [1m[35m (42.4ms)[0m  COMMIT
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreatePratosRestaurantesJoinTable (20140901133409)
+  [1m[35m (164.4ms)[0m  CREATE TABLE `pratos_restaurantes` (`prato_id` int(11), `restaurantes_id` int(11)) ENGINE=InnoDB
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20140901133409')
+  [1m[36m (57.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.5ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.4ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`

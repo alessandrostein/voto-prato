@@ -1,5 +1,7 @@
 class Cliente < ActiveRecord::Base
 
+	has_many :qualificacoes
+
 	validates_presence_of :nome, message: "Nome deve ser preenchido"
 	validates_uniqueness_of :nome, message: "Nome ja cadastrado"
 

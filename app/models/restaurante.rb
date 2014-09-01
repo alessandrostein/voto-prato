@@ -1,5 +1,8 @@
 class Restaurante < ActiveRecord::Base	
 
+	has_many: qualificacoes
+	has_and_belongs_to_many :pratos	
+
 	validates_presence_of :nome, message: "Campo nome deve ser preenchido"
 	validates_presence_of :endereco, message: "Campo endereco deve ser preenchido"
 	validates_presence_of :especialidade, message: "Campo especialidade deve ser preenchido"
