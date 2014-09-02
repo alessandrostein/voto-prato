@@ -15,6 +15,7 @@
 		<td><%= restaurante.especialidade %></td>
 		<td><%= link_to 'Mostrar', action: 'show', id: restaurante %></td>
 		<td><%= link_to 'Deletar', {action: 'destroy', id: restaurante}, {method: "delete"} %></td>
+		<td><%= link_to 'Editar', action: 'edit', id: restaurante %></td>
 	</tr>
 	<% end %>
 </table>
