@@ -1840,3 +1840,345 @@ Started GET "/assets/ola_mundo.js?body=1" for 127.0.0.1 at 2014-09-25 23:31:09 -
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-25 23:31:09 -0300
+
+
+Started GET "/restaurantes" for 127.0.0.1 at 2014-09-25 23:51:07 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+
+SyntaxError (/home/alessandrostein/gitrepo/voto-prato/app/controllers/restaurantes_controller.rb:49: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/controllers/restaurantes_controller.rb:49: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /home/alessandrostein/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /home/alessandrostein/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /home/alessandrostein/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (8.2ms)
+  Rendered /home/alessandrostein/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (19.4ms)
+
+
+Started GET "/restaurantes" for 127.0.0.1 at 2014-09-25 23:51:19 -0300
+Processing by RestaurantesController#index as HTML
+  [1m[35mRestaurante Load (0.4ms)[0m  SELECT `restaurantes`.* FROM `restaurantes`   ORDER BY `restaurantes`.`nome` ASC
+  Rendered restaurantes/index.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 49ms (Views: 38.6ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-25 23:51:19 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-25 23:51:19 -0300
+
+
+Started GET "/assets/restaurantes.css?body=1" for 127.0.0.1 at 2014-09-25 23:51:19 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-25 23:51:19 -0300
+
+
+Started GET "/assets/ola_mundo.css?body=1" for 127.0.0.1 at 2014-09-25 23:51:19 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-25 23:51:19 -0300
+
+
+Started GET "/assets/ola_mundo.js?body=1" for 127.0.0.1 at 2014-09-25 23:51:19 -0300
+
+
+Started GET "/assets/restaurantes.js?body=1" for 127.0.0.1 at 2014-09-25 23:51:19 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-25 23:51:19 -0300
+
+
+Started GET "/restaurantes/5/edit" for 127.0.0.1 at 2014-09-25 23:51:21 -0300
+Processing by RestaurantesController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mRestaurante Load (0.7ms)[0m  [1mSELECT  `restaurantes`.* FROM `restaurantes`  WHERE `restaurantes`.`id` = 5 LIMIT 1[0m
+  Rendered restaurantes/edit.html.erb within layouts/application (19.3ms)
+Completed 200 OK in 29ms (Views: 23.8ms | ActiveRecord: 0.7ms)
+
+
+Started PATCH "/restaurantes/5" for 127.0.0.1 at 2014-09-25 23:51:28 -0300
+Processing by RestaurantesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Avu67kf6lIZvpov+vS1GJJ+Wj7h9AXNG61qfww9nQRk=", "restaurante"=>{"nome"=>"8", "endereco"=>"Av. dos Restaurantes, 126", "especialidade"=>"Comida Italiana"}, "commit"=>"Update Restaurante", "id"=>"5"}
+  [1m[35mRestaurante Load (0.4ms)[0m  SELECT  `restaurantes`.* FROM `restaurantes`  WHERE `restaurantes`.`id` = 5 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mRestaurante Exists (0.3ms)[0m  SELECT  1 AS one FROM `restaurantes`  WHERE (`restaurantes`.`nome` = BINARY '8' AND `restaurantes`.`id` != 5) LIMIT 1
+  [1m[36mRestaurante Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `restaurantes`  WHERE (`restaurantes`.`endereco` = BINARY 'Av. dos Restaurantes, 126' AND `restaurantes`.`id` != 5) LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  Rendered restaurantes/edit.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 43ms (Views: 5.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/ola_mundo.css?body=1" for 127.0.0.1 at 2014-09-25 23:51:28 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-25 23:51:28 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-25 23:51:28 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-25 23:51:28 -0300
+
+
+Started GET "/assets/restaurantes.css?body=1" for 127.0.0.1 at 2014-09-25 23:51:28 -0300
+
+
+Started GET "/assets/ola_mundo.js?body=1" for 127.0.0.1 at 2014-09-25 23:51:28 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-25 23:51:28 -0300
+
+
+Started GET "/assets/restaurantes.js?body=1" for 127.0.0.1 at 2014-09-25 23:51:28 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-25 23:51:28 -0300
+
+
+Started GET "/restaurantes" for 127.0.0.1 at 2014-09-25 23:53:48 -0300
+Processing by RestaurantesController#index as HTML
+  [1m[36mRestaurante Load (0.7ms)[0m  [1mSELECT `restaurantes`.* FROM `restaurantes`   ORDER BY `restaurantes`.`nome` ASC[0m
+  Rendered restaurantes/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 13ms (Views: 10.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/ola_mundo.css?body=1" for 127.0.0.1 at 2014-09-25 23:53:48 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-25 23:53:48 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-25 23:53:48 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-25 23:53:48 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-25 23:53:48 -0300
+
+
+Started GET "/assets/restaurantes.css?body=1" for 127.0.0.1 at 2014-09-25 23:53:48 -0300
+
+
+Started GET "/assets/ola_mundo.js?body=1" for 127.0.0.1 at 2014-09-25 23:53:48 -0300
+
+
+Started GET "/assets/restaurantes.js?body=1" for 127.0.0.1 at 2014-09-25 23:53:48 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-25 23:53:48 -0300
+
+
+Started GET "/restaurantes/new" for 127.0.0.1 at 2014-09-25 23:53:50 -0300
+Processing by RestaurantesController#new as HTML
+  Rendered restaurantes/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/restaurantes" for 127.0.0.1 at 2014-09-25 23:53:58 -0300
+Processing by RestaurantesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Avu67kf6lIZvpov+vS1GJJ+Wj7h9AXNG61qfww9nQRk=", "restaurante"=>{"nome"=>"Alessandro", "endereco"=>"89253420", "especialidade"=>"Comida Italiana"}, "commit"=>"Create Restaurante"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mRestaurante Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM `restaurantes`  WHERE `restaurantes`.`nome` = BINARY 'Alessandro' LIMIT 1[0m
+  [1m[35mRestaurante Exists (0.4ms)[0m  SELECT  1 AS one FROM `restaurantes`  WHERE `restaurantes`.`endereco` = BINARY '89253420' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `restaurantes` (`created_at`, `endereco`, `especialidade`, `nome`, `updated_at`) VALUES ('2014-09-26 02:53:58', '89253420', 'Comida Italiana', 'Alessandro', '2014-09-26 02:53:58')[0m
+  [1m[35m (101.6ms)[0m  COMMIT
+Redirected to http://localhost:3000/restaurantes/8
+Completed 302 Found in 110ms (ActiveRecord: 103.0ms)
+
+
+Started GET "/restaurantes/8" for 127.0.0.1 at 2014-09-25 23:53:58 -0300
+Processing by RestaurantesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mRestaurante Load (0.5ms)[0m  [1mSELECT  `restaurantes`.* FROM `restaurantes`  WHERE `restaurantes`.`id` = 8 LIMIT 1[0m
+  Rendered restaurantes/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 10ms (Views: 7.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/restaurantes.css?body=1" for 127.0.0.1 at 2014-09-25 23:53:58 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-25 23:53:58 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-25 23:53:58 -0300
+
+
+Started GET "/assets/ola_mundo.js?body=1" for 127.0.0.1 at 2014-09-25 23:53:58 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-25 23:53:58 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-25 23:53:58 -0300
+
+
+Started GET "/assets/ola_mundo.css?body=1" for 127.0.0.1 at 2014-09-25 23:53:58 -0300
+
+
+Started GET "/assets/restaurantes.js?body=1" for 127.0.0.1 at 2014-09-25 23:53:58 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-25 23:53:58 -0300
+
+
+Started GET "/restaurantes/8/edit" for 127.0.0.1 at 2014-09-25 23:54:06 -0300
+Processing by RestaurantesController#edit as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mRestaurante Load (0.7ms)[0m  SELECT  `restaurantes`.* FROM `restaurantes`  WHERE `restaurantes`.`id` = 8 LIMIT 1
+  Rendered restaurantes/edit.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 15ms (Views: 12.5ms | ActiveRecord: 0.7ms)
+
+
+Started PATCH "/restaurantes/8" for 127.0.0.1 at 2014-09-25 23:54:10 -0300
+Processing by RestaurantesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Avu67kf6lIZvpov+vS1GJJ+Wj7h9AXNG61qfww9nQRk=", "restaurante"=>{"nome"=>"aessandro", "endereco"=>"89253420", "especialidade"=>"Comida Italiana"}, "commit"=>"Update Restaurante", "id"=>"8"}
+  [1m[36mRestaurante Load (0.7ms)[0m  [1mSELECT  `restaurantes`.* FROM `restaurantes`  WHERE `restaurantes`.`id` = 8 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mRestaurante Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM `restaurantes`  WHERE (`restaurantes`.`nome` = BINARY 'aessandro' AND `restaurantes`.`id` != 8) LIMIT 1[0m
+  [1m[35mRestaurante Exists (0.4ms)[0m  SELECT  1 AS one FROM `restaurantes`  WHERE (`restaurantes`.`endereco` = BINARY '89253420' AND `restaurantes`.`id` != 8) LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  Rendered restaurantes/edit.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 13ms (Views: 6.0ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-25 23:54:10 -0300
+
+
+Started GET "/assets/ola_mundo.css?body=1" for 127.0.0.1 at 2014-09-25 23:54:10 -0300
+
+
+Started GET "/assets/restaurantes.css?body=1" for 127.0.0.1 at 2014-09-25 23:54:10 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-25 23:54:10 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-25 23:54:10 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-25 23:54:10 -0300
+
+
+Started GET "/assets/ola_mundo.js?body=1" for 127.0.0.1 at 2014-09-25 23:54:10 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-25 23:54:10 -0300
+
+
+Started GET "/assets/restaurantes.js?body=1" for 127.0.0.1 at 2014-09-25 23:54:10 -0300
+
+
+Started PATCH "/restaurantes/8" for 127.0.0.1 at 2014-09-25 23:54:16 -0300
+Processing by RestaurantesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Avu67kf6lIZvpov+vS1GJJ+Wj7h9AXNG61qfww9nQRk=", "restaurante"=>{"nome"=>"Aessandro", "endereco"=>"89253420", "especialidade"=>"Comida Italiana"}, "commit"=>"Update Restaurante", "id"=>"8"}
+  [1m[35mRestaurante Load (0.6ms)[0m  SELECT  `restaurantes`.* FROM `restaurantes`  WHERE `restaurantes`.`id` = 8 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mRestaurante Exists (0.8ms)[0m  SELECT  1 AS one FROM `restaurantes`  WHERE (`restaurantes`.`nome` = BINARY 'Aessandro' AND `restaurantes`.`id` != 8) LIMIT 1
+  [1m[36mRestaurante Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM `restaurantes`  WHERE (`restaurantes`.`endereco` = BINARY '89253420' AND `restaurantes`.`id` != 8) LIMIT 1[0m
+  [1m[35mSQL (50.0ms)[0m  UPDATE `restaurantes` SET `nome` = 'Aessandro', `updated_at` = '2014-09-26 02:54:16' WHERE `restaurantes`.`id` = 8
+  [1m[36m (160.6ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/restaurantes/8
+Completed 302 Found in 220ms (ActiveRecord: 212.4ms)
+
+
+Started GET "/restaurantes/8" for 127.0.0.1 at 2014-09-25 23:54:16 -0300
+Processing by RestaurantesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mRestaurante Load (0.6ms)[0m  SELECT  `restaurantes`.* FROM `restaurantes`  WHERE `restaurantes`.`id` = 8 LIMIT 1
+  Rendered restaurantes/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 9ms (Views: 6.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/ola_mundo.css?body=1" for 127.0.0.1 at 2014-09-25 23:54:16 -0300
+
+
+Started GET "/assets/restaurantes.css?body=1" for 127.0.0.1 at 2014-09-25 23:54:16 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-25 23:54:16 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-25 23:54:16 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-25 23:54:16 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-25 23:54:16 -0300
+
+
+Started GET "/assets/restaurantes.js?body=1" for 127.0.0.1 at 2014-09-25 23:54:16 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-25 23:54:16 -0300
+
+
+Started GET "/assets/ola_mundo.js?body=1" for 127.0.0.1 at 2014-09-25 23:54:16 -0300
+
+
+Started GET "/restaurantes/8" for 127.0.0.1 at 2014-09-26 00:02:33 -0300
+Processing by RestaurantesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mRestaurante Load (0.3ms)[0m  [1mSELECT  `restaurantes`.* FROM `restaurantes`  WHERE `restaurantes`.`id` = 8 LIMIT 1[0m
+  Rendered restaurantes/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 8ms (Views: 6.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/ola_mundo.css?body=1" for 127.0.0.1 at 2014-09-26 00:02:33 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-26 00:02:33 -0300
+
+
+Started GET "/assets/ola_mundo.js?body=1" for 127.0.0.1 at 2014-09-26 00:02:33 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-26 00:02:33 -0300
+
+
+Started GET "/assets/restaurantes.css?body=1" for 127.0.0.1 at 2014-09-26 00:02:33 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-26 00:02:33 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-26 00:02:33 -0300
+
+
+Started GET "/assets/restaurantes.js?body=1" for 127.0.0.1 at 2014-09-26 00:02:33 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-26 00:02:33 -0300
+
+
+Started GET "/restaurantes" for 127.0.0.1 at 2014-09-26 00:02:35 -0300
+Processing by RestaurantesController#index as HTML
+  [1m[35mRestaurante Load (0.8ms)[0m  SELECT `restaurantes`.* FROM `restaurantes`   ORDER BY `restaurantes`.`nome` ASC
+  Rendered restaurantes/index.html.erb within layouts/application (9.8ms)
+Completed 200 OK in 21ms (Views: 18.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/restaurantes/8" for 127.0.0.1 at 2014-09-26 00:02:37 -0300
+Processing by RestaurantesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mRestaurante Load (0.6ms)[0m  [1mSELECT  `restaurantes`.* FROM `restaurantes`  WHERE `restaurantes`.`id` = 8 LIMIT 1[0m
+  Rendered restaurantes/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 10ms (Views: 7.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/restaurantes/8/edit" for 127.0.0.1 at 2014-09-26 00:02:38 -0300
+Processing by RestaurantesController#edit as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mRestaurante Load (0.4ms)[0m  SELECT  `restaurantes`.* FROM `restaurantes`  WHERE `restaurantes`.`id` = 8 LIMIT 1
+  Rendered restaurantes/_form.html.erb (3.3ms)
+  Rendered restaurantes/edit.html.erb within layouts/application (26.3ms)
+Completed 200 OK in 38ms (Views: 36.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/restaurantes" for 127.0.0.1 at 2014-09-26 00:02:40 -0300
+Processing by RestaurantesController#index as HTML
+  [1m[36mRestaurante Load (0.4ms)[0m  [1mSELECT `restaurantes`.* FROM `restaurantes`   ORDER BY `restaurantes`.`nome` ASC[0m
+  Rendered restaurantes/index.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 13ms (Views: 11.5ms | ActiveRecord: 0.4ms)

@@ -1,16 +1,5 @@
 <h1> Adicionando Restaurante </h1>
 
-<ul>
-	<% @restaurante.errors.full_messages.each do |msg| %>
-	<li><%= msg %></li>
-	<% end %>
-</ul>
-
-<%= form_for @restaurante do |f| %>
-	Nome: <%= f.text_field :nome %> <br/>
-	Endereco: <%= f.text_field :endereco %> <br/>
-	Especialidade: <%= f.text_field :especialidade %> <br/>
-	<%= f.submit %>
-<% end %>
+<%= render partial: "form" %>
 
 <%= link_to 'Voltar', action: 'index' %>
