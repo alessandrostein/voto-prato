@@ -1,0 +1,30 @@
+<h1>Listing qualificacoes</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Cliente</th>
+      <th>Restaurante</th>
+      <th>Nota</th>
+      <th>Valor gasto</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @qualificacoes.each do |qualificacao| %>
+      <tr>
+        <td><%= qualificacao.cliente.nome %></td>
+        <td><%= qualificacao.restaurante.nome %></td>
+        <td><%= qualificacao.nota %></td>
+        <td><%= qualificacao.valor_gasto %></td>
+        <td><%= link_to 'Show', qualificacao %></td>
+        <td><%= link_to 'Edit', edit_qualificacao_path(qualificacao) %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Qualificacao', new_qualificacao_path %>
