@@ -1,10 +1,14 @@
 class QualificacoesController < ApplicationController
   before_action :set_qualificacao, only: [:show, :edit, :update, :destroy]
 
+  respond_to :html, :xml, :json
+
   # GET /qualificacoes
   # GET /qualificacoes.json
   def index
     @qualificacoes = Qualificacao.all
+
+    respond_with @qualificacoes
   end
 
   # GET /qualificacoes/1
@@ -25,7 +29,9 @@ class QualificacoesController < ApplicationController
     if params[:restaurante]
       @qualificacao.restaurante = Restaurante.find(params[:restaurante])
     end
-    
+
+    respond_with @qualificacao
+
   end
 
   # GET /qualificacoes/1/edit

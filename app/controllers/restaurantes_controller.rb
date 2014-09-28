@@ -1,23 +1,17 @@
 class RestaurantesController < ApplicationController
 
+	respond_to :html, :xml, :json
+
 	def index
 		@restaurantes = Restaurante.order :nome
 
-		respond_to do |format|
-			format.html
-			format.xml {render xml: @restaurantes}
-			format.json {render json: @restaurantes}
-		end
+		respond_with @restaurantes
 	end
 
 	def show
 		@restaurante = Restaurante.find(params[:id])
-
-		respond_to do |format|
-			format.html
-			format.xml {render xml: @restaurante}
-			format.json {render json: @restaurante}
-		end
+		
+		respond_with @restaurante
 	end
 
 	def destroy
@@ -29,6 +23,7 @@ class RestaurantesController < ApplicationController
 
 	def new
 		@restaurante = Restaurante.new
+		respond_with @restaurante
 	end
 
 	def create
